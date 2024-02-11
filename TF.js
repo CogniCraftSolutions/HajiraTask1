@@ -103,6 +103,7 @@ function showQuestion(){
     
     questionElement.innerHTML = questionNo + "."+currentQuestion.question;
     document.getElementById("result").innerHTML = "";
+    
     currentQuestion.answers.forEach(answer =>{
         const button = document.createElement("button");
         button.innerHTML = answer.text;
